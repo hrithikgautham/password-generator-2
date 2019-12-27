@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="display">
+            <input type="text" id="display-input" value=""/>
+            <p>click to copy</p>
+        </div>
+        <div class="length">
+            <div class="length-specs">
+                <p>length</p>
+                <span id="number-of-chars-display">10</span>
+            </div>
+            <div class="length-range">
+                <p>1</p>
+                <input type="range" min="1" max="100" value="10"/>
+                <p>100</p>
+            </div>
+        </div>
+        <div class="settings">
+            <p>settings</p>
+            <div>
+                <div class="uppercase">
+                    <h3>Include Uppercase</h3>
+                    <label id="slider1" for="check1" class="switch">
+                        <input id="check1" type="checkbox"/>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="lowercase">
+                    <h3>Include Lowercase</h3>
+                    <label id="slider2" for="check2" class="switch">
+                        <input id="check2" type="checkbox"/>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="numbers">
+                    <h3>Include Numbers</h3>
+                    <label id="slider3" for="check3" class="switch">
+                        <input id="check3" type="checkbox"/>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="symbols">
+                    <h3>Include Symbols</h3>
+                    <label id="slider4" for="check4" class="switch">
+                        <input id="check4" type="checkbox"/>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <button id="generate" type="submit">Generate Password</button>
+    </div>
+</body>
+</html>

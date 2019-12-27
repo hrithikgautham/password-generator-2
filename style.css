@@ -1,0 +1,203 @@
+:root {
+    --bg-color: #0a0b13;
+    --element-bg-color: rgb(4, 16, 75);
+}
+
+/* styling  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #209cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.container {
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px black;
+}
+
+.container h2 {
+    padding: 1rem;
+    
+}
+
+/* display */
+.display {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    border-radius: 0.5rem;
+    background-color: var(--element-bg-color);
+    padding: 5px 0.5rem;
+    cursor: pointer;
+}
+
+.display p {
+    font-size: 15px;
+    text-align: right;
+}
+
+.display input {
+    height: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 2px 2px 0 2px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+/* length */
+
+.length {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* padding: 0.5rem; */
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.length .length-specs {
+    display: flex;
+    align-items: center;
+    color: #222;
+}
+
+.length .length-specs #number-of-chars-display {
+    margin-left: 10px;
+}
+
+.length .length-range {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: px; */
+    /* cursor: pointer; */
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--element-bg-color);
+}
+
+.length .length-range input {
+    width: 170px;
+}
+
+/* switches */
+.uppercase, 
+.lowercase, 
+.numbers,
+.symbols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* styling switch buttons */
+
+.switch {
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    position: relative;
+    background-color: #333;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    transition: 0.4s;
+    cursor: pointer;
+    content: "";
+    width: 18px;
+    height: 18px;
+    bottom: 2px;
+    left: 2px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* .slider:before {
+    position: absolute;
+    content: "";
+    background-color: #333;
+    width: 53px;
+    height: 26px;
+} */
+
+.switch input[type="checkbox"]:checked + .slider {
+    background-color: #19ff53;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+    transform: translateX(22px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* settings */
+
+.settings {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+
+.settings > p {
+
+}
+
+.settings > div {
+    border-radius: 0.5rem;
+    background-color: var(--element-bg-color);
+    padding: 0.5rem 1rem;
+}
+
+.settings div > div:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* submit button styling */
+.container button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgb(18, 29, 179);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    font-weight: bold;
+}
+
+.container button:hover {
+    background-color: rgb(28, 39, 189);
+    cursor: pointer;
+}
